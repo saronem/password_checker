@@ -1,6 +1,7 @@
-# Password Strength Checker
+# Simple Password Strength Checker
 
-A Python application that evaluates password strength based on industry best practices and checks for potential data breaches.
+A lightweight Python application that evaluates password strength based on cybersecurity best practices.
+Based on VT Project for Cybersecurity Field Study
 
 ![Password Strength Checker Screenshot](https://github.com/sarone/password-strength-checker/raw/main/screenshot.png)
 
@@ -9,15 +10,14 @@ A Python application that evaluates password strength based on industry best pra
 This tool helps users create and evaluate secure passwords by:
 - Analyzing password complexity and strength
 - Providing specific feedback for improvement
-- Checking if passwords have appeared in known data breaches
 - Generating strong random passwords
 
 ## Features
 
 ### 1. Password Strength Analysis
 - Visual meter showing password strength from 0-100%
-- Color-coded indicators (red, yellow, light green, green)
-- Calculates score based on industry-standard criteria
+- Color-coded indicators (red, orange, blue, green)
+- Calculates score based on cybersecurity best practices
 
 ### 2. Comprehensive Feedback
 - Provides specific suggestions for improving password security
@@ -28,33 +28,27 @@ This tool helps users create and evaluate secure passwords by:
   - Repetitive characters (aaa, 111)
   - Common dictionary words
 
-### 3. Data Breach Verification
-- Checks if a password has appeared in known data breaches
-- Uses the "Have I Been Pwned" API with k-anonymity model for secure checking
-- Only the first 5 characters of the password hash are sent over the network
-
-### 4. Strong Password Generator
+### 3. Strong Password Generator
 - Creates cryptographically strong random passwords
 - Ensures all character types are included
-- Default length of 16 characters for optimal security
+- Default length of 12 characters for good security
 
 ## Technical Implementation
 
 - Built with Python 3.x
-- Uses Tkinter for the graphical user interface
+- Uses PySimpleGUI for a simple, clean graphical user interface
 - Implements industry-standard password security checks
-- Integrates with the "Have I Been Pwned" API for breach checking
-- Uses secure hashing (SHA-1) with k-anonymity for privacy protection
+- No external API dependencies - works completely offline
+- Lightweight and easy to understand for beginner developers
 
 ## Installation
 
 ### Prerequisites
 - Python 3.7 or higher
-- Internet connection (for data breach checking)
 
 ### Required Packages
 ```
-requests
+PySimpleGUI
 ```
 
 ### Setup
@@ -71,29 +65,27 @@ requests
    
    Or install individually:
    ```
-   pip install requests
+   pip install PySimpleGUI
    ```
 
 ## Usage
 
 1. Run the application:
    ```
-   python password_checker.py
+   python simple_password_checker.py
    ```
 
 2. Enter a password in the text field
    - The strength meter updates in real-time as you type
    - Feedback appears in the text area below
 
-3. Click "Check Data Breach" to verify if your password has been exposed in known data breaches
-
-4. Click "Generate Strong Password" to create a new secure password
+3. Click "Generate Strong Password" to create a new secure password
 
 ## Security Considerations
 
-- No passwords are stored or transmitted in plain text
-- Data breach checking uses a k-anonymity model
-- Only the first 5 characters of the SHA-1 hash are sent over the network
+- No passwords are stored or transmitted
+- The application works completely offline
+- No internet connection required
 - The application does not store any passwords or history
 
 ## Educational Value
@@ -101,18 +93,19 @@ requests
 This project demonstrates several important cybersecurity concepts:
 - Password complexity requirements
 - Common password vulnerabilities
-- Secure API integration
-- K-anonymity model for privacy protection
-- Hash functions for secure data handling
+- Password entropy and strength calculation
+- Secure random password generation
+- Defense against common password attacks
 
 ## Future Enhancements
 
 Potential improvements for future versions:
-- Password manager integration
+- Data breach checking (optional API integration)
 - Custom complexity policy settings
-- Password expiration tracking
+- Password history tracking
 - Multi-language support
 - Dark mode theme
+- Password strength visualization with charts
 
 ## License
 
@@ -121,10 +114,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Author
 
 Saron Emanuel
-
-## Notes
-
-API connectivity and Tkinter config (prettification) was adding in support with Copilot! Still learning how to expand security tooling with AI!
 
 ## Acknowledgments
 

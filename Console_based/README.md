@@ -51,7 +51,7 @@ When run with the colorama library installed, the application provides:
 ### Setup
 1. Clone this repository:
    ```
-   git clone https://github.com/saronem/Console_based/password_checker.git
+   git clone https://github.com/saronem/password_checker.git
    cd password_checker
    ```
 

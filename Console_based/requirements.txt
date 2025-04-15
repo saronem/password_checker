@@ -1,0 +1,2 @@
+# Optional dependency for colored output
+colorama==0.4.6

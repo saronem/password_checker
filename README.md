@@ -60,19 +60,19 @@ PySimpleGUI
 
 2. Install required packages:
    ```
-   pip install -r requirements.txt
+   python3 -m pip install -r requirements.txt
    ```
    
    Or install individually:
    ```
-   pip install PySimpleGUI
+   python3 -m pip install PySimpleGUI
    ```
 
 ## Usage
 
 1. Run the application:
    ```
-   python password_checker.py
+   python3 password_checker.py
    ```
 
 2. Enter a password in the text field

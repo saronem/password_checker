@@ -69,7 +69,7 @@ When run with the colorama library installed, the application provides:
 
 1. Run the application:
    ```
-   python3 password_checker.py
+   python3 Console_based/password_checker.py
    ```
 
 2. Enter a password to check its strength.

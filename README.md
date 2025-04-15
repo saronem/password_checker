@@ -54,8 +54,8 @@ PySimpleGUI
 ### Setup
 1. Clone this repository:
    ```
-   git clone https://github.com/saronem/password-strength-checker.git
-   cd password-strength-checker
+   git clone https://github.com/saronem/password_checker.git
+   cd password_checker
    ```
 
 2. Install required packages:

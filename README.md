@@ -72,7 +72,7 @@ PySimpleGUI
 
 1. Run the application:
    ```
-   python simple_password_checker.py
+   python password_checker.py
    ```
 
 2. Enter a password in the text field

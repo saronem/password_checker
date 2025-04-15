@@ -137,7 +137,7 @@ It's an excellent practical introduction to password security principles for bot
 ## Future Enhancements
 
 Potential improvements for future versions:
-- Zxcvbn integration for more advanced password entropy calculation
+- GUI Version: https://github.com/saronem/password_checker/tree/main/GUI_based
 - Password breach checking
 - Password history tracking
 - Configuration options for custom security policies
